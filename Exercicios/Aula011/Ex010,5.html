@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        body{
+            font: normal 2em Arial;
+        }
+
+        h1{
+            margin: auto;
+            text-align: center;
+        }
+
+        main{
+            margin: auto;
+            text-align: center;
+        }
+
+        input#ch{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checar país</h1>
+
+    <main>
+        <input type="text" name="text" id="txtp" placeholder="Insira seu País aqui" minlength="2" maxlength="30" required>
+        <input type="button" value="Checar" id="ch">
+        <div id="res"></div>
+    </main>
+
+    <script>
+        var texto = document.getElementById('txtp')
+        var botao = document.getElementById('ch')
+        var r = document.getElementById('res')
+        botao.addEventListener('click', check)
+
+        function check(){
+            if (texto.value == 'Brasil'){
+                r.innerHTML = `<p>Você é <strong>Brasileiro</strong></p>`
+            } 
+            else{
+                r.innerHTML = `<p>Você é <strong>Gringo</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
