@@ -75,6 +75,7 @@
         exemplo:
         5 == 5 -- true
         5 == '5' -- true 
+        
         5 === '5' -- false
         5 !== '5' -- true
 
@@ -84,7 +85,17 @@
         ele é executado nessa ordem:
         ! -- negação
         && -- conjunção, e lógico
-        // -- disjunção, ou lógico
+        || -- disjunção, ou lógico
+
+        Ordem de precedencia:
+        Aritiméticos: (), **, /...
+        Relacionais: <, >, >= ... (Não tem ordem, o que aparecer primeiro é o que deve ser resolvido)
+        Lógicos: !, &&, || 
+
+        Tenário:
+        ? :
+        Teste ? true : false
+        ex: média >= 7? "aprovado" : "reprovado"
     -->
 </body>
 </html>
