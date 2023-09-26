@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(100, 100, 223);
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397);
+    background-color: white;
+}
+
+section > div > input{
+    margin: 10px;
+}
+
+div#imagem{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    background-image: url(../Imagem/Manha.jpg);
+    border-radius: 50%;
+}
+
+div#res{
+    text-align: center;
+    margin: 10px;
+}
