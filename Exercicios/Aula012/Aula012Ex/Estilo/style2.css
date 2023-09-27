@@ -30,7 +30,7 @@ div#imagem{
     margin: auto;
     margin-bottom: 10px;
 
-    background-image: url(../Imagem/Manha.jpg);
+    display: none;
     border-radius: 50%;
 }
 
