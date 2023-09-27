@@ -5,7 +5,6 @@ var sex = document.getElementsByName('sex')
 
 function Verificar(){
     var idade = Number(ano) - Number(data.value)
-    var img = 
     if (data.value.length == 0 || Number(data.value) > ano){
         window.alert('[ERRO] Confira os dados')
     }else if (sex[0].checked){
