@@ -5,11 +5,15 @@ var sex = document.getElementsByName('sex')
 
 function Verificar(){
     var idade = Number(ano) - Number(data.value)
+    var fundo = document.getElementById('imagem').style
+    
     if (data.value.length == 0 || Number(data.value) > ano){
         window.alert('[ERRO] Confira os dados')
     }else if (sex[0].checked){
         var gender = 'Homem'
         if(idade >= 0 && idade < 10){
+            fundo.backgroundimage = 'Imagem/Bebe.jpeg'
+            fundo.display = 'block'
             //bebe
         }else if(idade < 21){
             //jovem
