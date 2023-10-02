@@ -11,27 +11,27 @@ function Verificar(){
         window.alert('[ERRO] Confira os dados')
     }else if (sex[0].checked){
         var gender = 'Homem'
+        fundo.display = 'block'
         if(idade >= 0 && idade < 10){
-            fundo.backgroundimage = 'Imagem/Bebe.jpeg'
-            fundo.display = 'block'
-            //bebe
+            fundo.backgroundImage = 'url(Imagem/Bebe.jpeg)'
         }else if(idade < 21){
-            //jovem
+            fundo.backgroundImage = 'url(Imagem/jovem.jpeg)'
         }else if(idade < 50){
-            //adulto
+            fundo.backgroundImage = 'url(Imagem/adulto.jpeg)'
         }else {
-            //idoso
+            fundo.backgroundImage = 'url(Imagem/idoso.png)'
         }
     } else {
         var gender = 'Mulher'
+        fundo.display = 'block'
         if(idade >= 0 && idade < 10){
-            //criança
+            fundo.backgroundImage = 'url(Imagem/bebef.jpeg)'
         }else if(idade < 21){
-            //jovem
+            fundo.backgroundImage = 'url(Imagem/jovemf.jpeg)'
         }else if(idade < 50){
-            //adulto
+            fundo.backgroundImage = 'url(Imagem/adultof.jpeg)'
         }else {
-            //idoso
+            fundo.backgroundImage = 'url(Imagem/idosa.png)'
         }
     }
     ans.innerHTML = `Detectamos ${gender} de ${idade} anos`

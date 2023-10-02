@@ -29,6 +29,9 @@ div#imagem{
     height: 250px;
     margin: auto;
     margin-bottom: 10px;
+    display: none;
+    background-size: cover;
+    background-position: center center;
 
     border-radius: 50%;
 }
