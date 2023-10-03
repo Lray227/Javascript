@@ -10,16 +10,15 @@
         <h1>Vamos contar</h1>
     </header>
     <section>
-        <label for="iini">Início:</label>
-        <input type="number" name="ini" id="iini">
-        <br>
-        <label for="ifim">Fim:</label>
-        <input type="number" name="fim" id="ifim">
-        <br>
-        <label for="istep">Passo:</label>
-        <input type="number" name="step" id="istep">
-        <br>
-        <input type="button" value="Contar" id="contar">
+        <div>
+            <p>Início: <input type="number" name="inicio" id="txt1"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="Contar" id="conta"></p>
+        </div>
+        <div id="res">
+            <p>Preparando a contagem...</p>
+        </div>
     </section>
     <div id="res"></div>
     <footer><p>&#169;<em>CursoemVídeo</em></p></footer>
