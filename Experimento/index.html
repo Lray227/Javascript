@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Experimento</title>
+</head>
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <label for="num">Numero de 1 a 100:</label>
+            <input type="number" name="num" id="num">
+            <input type="button" value="Adicionar" onclick="Adicionar()">
+            <br>
+            <select name="sel" id="lista" size="10"></select>
+            <br>
+            <input type="button" value="Finalizar" onclick="Finalizar()">
+        </div>
+        <div id="res"></div>
+    </section>
+    <footer><em>Experimental</em></footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
